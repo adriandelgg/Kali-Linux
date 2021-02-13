@@ -1,0 +1,189 @@
+/* Universal Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	color: seashell;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: serif;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	background-color: #1a1a1a;
+	border-bottom: 4px solid #e04320;
+	z-index: 5;
+}
+
+.img-h2-head {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-left: 1rem;
+}
+
+
+header img {
+	float: left;
+	height: 100px;
+	width: auto;
+}
+
+header h2 {
+	text-align: left;
+}
+
+nav {
+	margin-right: 3rem;
+	font-size: 1.5rem;
+	word-spacing: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: serif;
+	font-weight: 550;
+}
+
+nav a:link {
+	color: white;
+}
+
+nav a:hover {
+	color: red;
+}
+
+nav a:active {
+	color: blue;
+}
+
+
+/* Main */
+
+main {
+	display: flex;
+	justify-content: space-around;
+	background-image: url("hackerblackred.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 100px;
+	height: 850px;
+	width: 100%;
+	margin: 0 auto 40px auto;
+}
+
+main h1 {
+	opacity: .9;
+	position: relative;
+	margin-top: 19rem;
+	margin-bottom: 0;
+}
+
+/* Product Info */
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+section img {
+	width: 350px;
+	height: auto;
+}
+
+.images-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.images-flex div {
+	width: 350px;
+	margin: 35px 40px;
+	line-height: 1.5rem;
+}
+
+.images-flex h3 {
+	padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	border-top: 3px solid #e04320;
+	padding: 17px;
+	background-color: #111;
+	width: 100%;
+	margin-top: 60px;
+}
+
+footer div {
+	line-height: 1.5rem;
+}
+
+.contact {
+	margin-right:60px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 756px) {
+	main {
+		width: 100%;
+	}
+	header h2 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 441px) {
+	header {
+		position: relative;
+		justify-content: space-around;
+	}
+	
+	header a {
+		font-size: 1.2rem;
+	}
+
+	main {
+		font-size: .8rem;
+		height: 600px;
+	}
+
+	main h1 {
+		margin-top: 12rem;
+	}
+	
+	nav {
+		margin-right: -1rem;
+	}
+
+	.img-h2-head {
+		margin-left: 0;
+	}
+	
+	.copyright {
+		display: none;
+	}
+}
